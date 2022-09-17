@@ -1,17 +1,15 @@
-import { ConsultoriaComponent } from './servicos/consultoria/consultoria.component';
-import { DrenagemComponent } from './servicos/drenagem/drenagem.component';
-import { TerraplanagemComponent } from './servicos/terraplanagem/terraplanagem.component';
+import { ContatoComponent } from './contato/contato.component';
+import { AreaAtuacaoComponent } from './area-atuacao/area-atuacao.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {path: 'home' , component: HomeComponent},
-  {path: 'servicos' , children:[
-    {path: 'terraplanagem', component: TerraplanagemComponent},
-    {path: 'drenagem', component: DrenagemComponent},
-    {path: 'consultoria', component: ConsultoriaComponent},
-  ]}
+  {path: 'quem-somos' , component: QuemSomosComponent},
+  {path: 'area-atuacao' , component: AreaAtuacaoComponent},
+  {path: 'contato' , component: ContatoComponent},
 ];
 
 @NgModule({

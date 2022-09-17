@@ -1,0 +1,9 @@
+.imagem {
+  background-image: url('../../assets/banner.jpeg');
+  background-size: cover;
+  background-position: center
+}
+
+.altura-banner {
+  height: 500px;
+}

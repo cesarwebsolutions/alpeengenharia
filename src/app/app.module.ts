@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TerraplanagemComponent } from './servicos/terraplanagem/terraplanagem.component';
-import { DrenagemComponent } from './servicos/drenagem/drenagem.component';
-import { ConsultoriaComponent } from './servicos/consultoria/consultoria.component';
+
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { AreaAtuacaoComponent } from './area-atuacao/area-atuacao.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,9 @@ import { ConsultoriaComponent } from './servicos/consultoria/consultoria.compone
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    TerraplanagemComponent,
-    DrenagemComponent,
-    ConsultoriaComponent
+    QuemSomosComponent,
+    AreaAtuacaoComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

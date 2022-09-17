@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TerraplanagemComponent } from './terraplanagem.component';
+import { ContatoComponent } from './contato.component';
 
-describe('TerraplanagemComponent', () => {
-  let component: TerraplanagemComponent;
-  let fixture: ComponentFixture<TerraplanagemComponent>;
+describe('ContatoComponent', () => {
+  let component: ContatoComponent;
+  let fixture: ComponentFixture<ContatoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TerraplanagemComponent ]
+      declarations: [ ContatoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TerraplanagemComponent);
+    fixture = TestBed.createComponent(ContatoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
