@@ -6,10 +6,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'home'},
   {path: 'home' , component: HomeComponent},
   {path: 'quem-somos' , component: QuemSomosComponent},
   {path: 'area-atuacao' , component: AreaAtuacaoComponent},
   {path: 'contato' , component: ContatoComponent},
+  {path: '**', redirectTo: 'home'},
 ];
 
 @NgModule({
