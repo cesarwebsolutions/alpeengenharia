@@ -6,7 +6,7 @@
     <div class="row gx-5 justify-content-center">
       <!-- Pricing card free-->
       <div class="col-lg-6 ">
-        <div class="mb-5 mb-xl-0">
+        <div class="mb-5 mb-xl-0 pointer" (click)="abrirCard('infraestrutura')">
           <img src="assets/projeto-infra.jpeg" class="card-img-top" alt="...">
           <div class=" p-3">
             <div class="small text-uppercase fw-bold text-warning fs-5"><p class="text-warning">Projetos de infraestrutura urbana</p></div>
@@ -21,7 +21,7 @@
       </div>
       <!-- Pricing card pro-->
       <div class="col-lg-6 ">
-        <div class="mb-5 mb-xl-0">
+        <div class="mb-5 mb-xl-0 pointer" (click)="abrirCard('instalacoes')">
           <img src="assets/instalacao-prediais.jpeg" class="card-img-top" alt="...">
           <div class=" p-3">
             <div class="small text-uppercase fw-bold text-warning fs-5">
@@ -36,7 +36,7 @@
       </div>
       <!-- Pricing card enterprise-->
       <div class="col-lg-6 ">
-        <div class="">
+        <div class="pointer" (click)="abrirCard('topografia')">
           <img src="assets/topografia.jpeg" class="card-img-top" alt="...">
           <div class=" p-3">
             <div class="small text-uppercase fw-bold text-warning fs-5">
@@ -52,7 +52,7 @@
       </div>
       <!-- Pricing card enterprise-->
       <div class="col-lg-6 ">
-        <div class="">
+        <div class="pointer" (click)="abrirCard('empreendimento')">
           <img src="assets/aprovado.jpeg" class="card-img-top" alt="...">
           <div class=" p-3">
             <div class="small text-uppercase fw-bold text-warning fs-5">

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-area-atuacao',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaAtuacaoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  abrirCard(card:string){
+    const dialogRef = this.dialog.open(DialogComponent,  {
+      data: card,
+      maxHeight: '90vh'
+    });
   }
 
 }

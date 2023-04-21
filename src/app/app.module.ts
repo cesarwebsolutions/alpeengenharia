@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { AreaAtuacaoComponent } from './area-atuacao/area-atuacao.component';
 import { ContatoComponent } from './contato/contato.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './area-atuacao/dialog/dialog.component'
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { ContatoComponent } from './contato/contato.component';
     FooterComponent,
     QuemSomosComponent,
     AreaAtuacaoComponent,
-    ContatoComponent
+    ContatoComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
