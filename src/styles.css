@@ -12271,3 +12271,6 @@ fieldset:disabled .btn {
 .contact-box p {
   font-size: 16px;
 }
+p {
+  text-align: justify;
+}
